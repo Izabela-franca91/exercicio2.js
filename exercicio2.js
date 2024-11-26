@@ -175,18 +175,74 @@ default: document.write("digite de 0 a 6");
 
 13) Use Operador lógico AND (&&) para verificar se um número está entre 10 e 20:
 
+let numero = 15; 
 
-
+if (numero >= 10 && numero <= 20) {
+    console.log("O número está entre 10 e 20.");
+} else {
+    console.log("O número não está entre 10 e 20.");
+}
 
 14) Use o operador ternário para verificar se uma pessoa pode votar (maior de 18 anos):
 
+let idade = 20; 
+
+let podeVotar = (idade >= 18) ? "A pessoa pode votar." : "A pessoa não pode votar.";
+
+console.log(podeVotar);
 
 15) Use Operador lógico OR (||) para verificar se uma pessoa é criança ou idosa:
 
+let idade = 10; 
+
+if (idade < 12 || idade >= 65) {
+    console.log("A pessoa é criança ou idosa.");
+} else {
+    console.log("A pessoa não é criança nem idosa.");
+}
 
 16) Use Switch case para verificar a estação do ano com base no mês:
+
+let mes = 3; 
+
+switch (mes) {
+    case 12:
+    case 1:
+    case 2:
+        console.log("É verão.");
+        break;
+    case 3:
+    case 4:
+    case 5:
+        console.log("É outono.");
+        break;
+    case 6:
+    case 7:
+    case 8:
+        console.log("É inverno.");
+        break;
+    case 9:
+    case 10:
+    case 11:
+        console.log("É primavera.");
+        break;
+    default:
+        console.log("Mês inválido. Por favor, insira um número de 1 a 12.");
+}
 
 
 17) Use Operador ternário encadeado para classificar uma nota entre 0 e 10, da seguinte forma: se for
 igual ou maior que 9 a nota é “A”, se for igual a 8 nota “B”, se for igual a 7 nota “C”, se for igual a 6 nota
 “D”, se for igual a 5 ou menor, nota “F”.
+  
+  let nota = 8; 
+
+let classificacao = 
+    (nota >= 9) ? "A" :
+    (nota === 8) ? "B" :
+    (nota === 7) ? "C" :
+    (nota === 6) ? "D" :
+    (nota <= 5) ? "F" :
+    "Nota inválida"; 
+
+console.log(`A classificação da nota ${nota} é: ${classificacao}`);
